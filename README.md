@@ -1,4 +1,4 @@
-# Image Scoring — meta workspace
+# Synth Photo — meta workspace
 
 Umbrella hub for the **Vexlum Scoring** ecosystem: sibling git repos under one parent folder (`D:\Projects` on this machine). This repo does not ship application runtime code; it holds the **multi-root Cursor/VS Code workspace**, a **repo manifest**, and **cross-repo scripts**.
 
