@@ -48,13 +48,16 @@ def hub_manifest_repos(hub: Path) -> list[Path]:
 
 
 def discover_repos(parent: Path) -> list[Path]:
-    repos = hub_manifest_repos(parent / "image-scoring")
+    hub = parent / "synth-photo"
+    if not hub.is_dir():
+        hub = parent / "image-scoring"  # pre-rename checkout name
+    repos = hub_manifest_repos(hub)
     if repos:
         return repos
     found: list[Path] = []
-    if (parent / "image-scoring").is_dir():
-        found.append((parent / "image-scoring").resolve())
-    for path in sorted(parent.glob("image-scoring-*")):
+    if hub.is_dir():
+        found.append(hub.resolve())
+    for path in sorted([*parent.glob("synth-photo-*"), *parent.glob("image-scoring-*")]):
         if (path / ".git").is_dir():
             found.append(path.resolve())
     return found
