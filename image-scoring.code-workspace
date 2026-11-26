@@ -1,8 +1,8 @@
 {
   "folders": [
     {
-      "name": "image-scoring",
-      "path": "D:\\Projects\\image-scoring"
+      "name": "synth-photo",
+      "path": "D:\\Projects\\synth-photo"
     },
     {
       "name": "synthet-llm-wiki",
@@ -17,12 +17,12 @@
       "path": "D:\\Projects\\image-scoring-gallery"
     },
     {
-      "name": "image-scoring-mobile",
-      "path": "D:\\Projects\\image-scoring-mobile"
+      "name": "synth-photo-labeler",
+      "path": "D:\\Projects\\synth-photo-labeler"
     },
     {
-      "name": "image-scoring-model",
-      "path": "D:\\Projects\\image-scoring-model"
+      "name": "synth-photo-vision",
+      "path": "D:\\Projects\\synth-photo-vision"
     },
     {
       "name": "image-scoring-skills",

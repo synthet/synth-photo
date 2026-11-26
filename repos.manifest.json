@@ -4,17 +4,17 @@
   "layout": {
     "kind": "sibling",
     "parentDir": "D:\\Projects",
-    "hubDir": "image-scoring"
+    "hubDir": "synth-photo"
   },
   "repositories": [
     {
       "id": "hub",
-      "dir": "image-scoring",
-      "path": "D:\\Projects\\image-scoring",
-      "github": "synthet/image-scoring",
+      "dir": "synth-photo",
+      "path": "D:\\Projects\\synth-photo",
+      "github": "synthet/synth-photo",
       "clone": {
-        "https": "https://github.com/synthet/image-scoring.git",
-        "ssh": "git@github.com:synthet/image-scoring.git"
+        "https": "https://github.com/synthet/synth-photo.git",
+        "ssh": "git@github.com:synthet/synth-photo.git"
       },
       "role": "meta",
       "description": "Umbrella workspace, docs, and cross-repo scripts (this repo)."
@@ -23,10 +23,10 @@
       "id": "pipeline",
       "dir": "image-scoring-pipeline",
       "path": "D:\\Projects\\image-scoring-pipeline",
-      "github": "synthet/image-scoring-pipeline",
+      "github": "synthet/synth-photo-engine",
       "clone": {
-        "https": "https://github.com/synthet/image-scoring-pipeline.git",
-        "ssh": "git@github.com:synthet/image-scoring-pipeline.git"
+        "https": "https://github.com/synthet/synth-photo-engine.git",
+        "ssh": "git@github.com:synthet/synth-photo-engine.git"
       },
       "role": "application",
       "product": "Vexlum Scoring",
@@ -36,10 +36,10 @@
       "id": "gallery",
       "dir": "image-scoring-gallery",
       "path": "D:\\Projects\\image-scoring-gallery",
-      "github": "synthet/image-scoring-gallery",
+      "github": "synthet/synth-photo-gallery",
       "clone": {
-        "https": "https://github.com/synthet/image-scoring-gallery.git",
-        "ssh": "git@github.com:synthet/image-scoring-gallery.git"
+        "https": "https://github.com/synthet/synth-photo-gallery.git",
+        "ssh": "git@github.com:synthet/synth-photo-gallery.git"
       },
       "role": "application",
       "product": "Driftara Gallery",
@@ -47,12 +47,12 @@
     },
     {
       "id": "mobile",
-      "dir": "image-scoring-mobile",
-      "path": "D:\\Projects\\image-scoring-mobile",
-      "github": "synthet/image-scoring-mobile",
+      "dir": "synth-photo-labeler",
+      "path": "D:\\Projects\\synth-photo-labeler",
+      "github": "synthet/synth-photo-labeler",
       "clone": {
-        "https": "https://github.com/synthet/image-scoring-mobile.git",
-        "ssh": "git@github.com:synthet/image-scoring-mobile.git"
+        "https": "https://github.com/synthet/synth-photo-labeler.git",
+        "ssh": "git@github.com:synthet/synth-photo-labeler.git"
       },
       "role": "application",
       "product": "Vexlum Mobile Labeler",
@@ -60,12 +60,12 @@
     },
     {
       "id": "model",
-      "dir": "image-scoring-model",
-      "path": "D:\\Projects\\image-scoring-model",
-      "github": "synthet/image-scoring-model",
+      "dir": "synth-photo-vision",
+      "path": "D:\\Projects\\synth-photo-vision",
+      "github": "synthet/synth-photo-vision",
       "clone": {
-        "https": "https://github.com/synthet/image-scoring-model.git",
-        "ssh": "git@github.com:synthet/image-scoring-model.git"
+        "https": "https://github.com/synthet/synth-photo-vision.git",
+        "ssh": "git@github.com:synthet/synth-photo-vision.git"
       },
       "role": "library",
       "product": "eye-quality",
@@ -75,23 +75,23 @@
       "id": "ui",
       "dir": "image-scoring-ui",
       "path": "D:\\Projects\\image-scoring-ui",
-      "github": "synthet/image-scoring-ui",
+      "github": "synthet/synth-photo-design",
       "clone": {
-        "https": "https://github.com/synthet/image-scoring-ui.git",
-        "ssh": "git@github.com:synthet/image-scoring-ui.git"
+        "https": "https://github.com/synthet/synth-photo-design.git",
+        "ssh": "git@github.com:synthet/synth-photo-design.git"
       },
       "role": "library",
-      "product": "@synthet/image-scoring-design",
+      "product": "@synthet/synth-photo-design",
       "description": "Shared design tokens and CSS/TS artifacts for backend SPA and gallery."
     },
     {
       "id": "skills",
       "dir": "image-scoring-skills",
       "path": "D:\\Projects\\image-scoring-skills",
-      "github": "synthet/image-scoring-skills",
+      "github": "synthet/synth-photo-lab",
       "clone": {
-        "https": "https://github.com/synthet/image-scoring-skills.git",
-        "ssh": "git@github.com:synthet/image-scoring-skills.git"
+        "https": "https://github.com/synthet/synth-photo-lab.git",
+        "ssh": "git@github.com:synthet/synth-photo-lab.git"
       },
       "role": "prompts",
       "description": "Photo evaluation / carousel prompts; optional MCP to backend scores."
@@ -110,7 +110,7 @@
       "id": "llm-wiki",
       "dir": "synthet-llm-wiki",
       "path": "D:\\Projects\\synthet-llm-wiki",
-      "github": "synthet/synthet-llm-wiki",
+      "github": "synthet/synth-agent-wiki",
       "role": "knowledge",
       "description": "Evidence-bound LLM Wiki — llmwiki-ro-core MCP; in default workspace.",
       "mcp": {
@@ -122,7 +122,7 @@
       "id": "code-framework",
       "dir": "synthet-code-framework",
       "path": "D:\\Projects\\synthet-code-framework",
-      "github": "synthet/synthet-code-framework",
+      "github": "synthet/synth-agent-framework",
       "role": "upstream",
       "description": "Generic agent scaffold; hub refreshed via scripts/framework-adopt.ps1."
     },
@@ -146,14 +146,14 @@
   "referenceDocuments": [
     {
       "title": "Jev Engineering for Coding Agents",
-      "path": "D:\\Projects\\image-scoring\\docs\\raw\\Jev-Engineering-for-Coding-Agents.pdf",
+      "path": "D:\\Projects\\synth-photo\\docs\\raw\\Jev-Engineering-for-Coding-Agents.pdf",
       "adoption": "docs/guides/JEV_ENGINEERING_ADOPTION.md"
     }
   ],
   "optionalSiblings": [
     {
       "dir": "synthet-agent-swarm",
-      "github": "synthet/synthet-agent-swarm",
+      "github": "synthet/synth-agent-swarm",
       "note": "External CLI reviews (synthet-agent-swarm MCP); see backend docs/technical/EXTERNAL_CLI_REVIEWS.md."
     }
   ]
